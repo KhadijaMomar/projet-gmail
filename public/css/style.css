@@ -1,0 +1,52 @@
+@import url(./reset.css);
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Espacement entre le logo et la navigation */
+    align-items: center;
+    /* Alignement vertical */
+    padding: 20px;
+    z-index: 5;
+}
+
+header .logo img {
+    height: 2.5rem;
+    /* Ajuste la hauteur du logo */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+header .logo span{
+    font-size: 1.5rem;
+    color:  #5f6368;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #5f6368;
+    /* Couleur du texte de la navigation */
+}
+
+nav button {
+    background-color: var(--main-color);
+    /* Couleur du bouton */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
