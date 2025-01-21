@@ -42,7 +42,9 @@ nav a {
     color: #5f6368;
     /* Couleur du texte de la navigation */
 }
-
+nav:nth-child(2) a{
+    margin-left: 1rem;
+}
 nav button {
     background-color: var(--main-color);
     /* Couleur du bouton */
@@ -51,6 +53,7 @@ nav button {
     border: none;
     cursor: pointer;
     height: 100%;
+    margin: 0;
 }
 .sec-1 {
             background-image: url('../bg.webp');
@@ -209,4 +212,21 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+}
+
+.sec-3 p{
+    color: #5f6368;
+}
+.sec-3 .content {
+    /* Styles précédents */
+    width: 50%;
+    /* Ajuste la largeur du contenu */
+    margin: 50px auto;
+    /* Centre le contenu horizontalement et ajoute une marge en haut */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
 }
