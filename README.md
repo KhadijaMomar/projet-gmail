@@ -31,4 +31,6 @@ Ce projet est une reproduction simplifiée de l'interface de Gmail
 - **CSS3** : Styles et mise en page.
 - **Font Awesome** : Icônes (optionnel).
 
-## Structure du projet
+
+## Liens vers le site
+[Click ici pour acceder a ma page](https://khadijamomar.github.io/projet-gmail/)
