@@ -1,0 +1,16 @@
+html{
+    font-size: 62%;
+}
+:root {
+    --text-color:white;
+    --main-color :#d14836;
+}
+body{
+    font: 1.6rem "Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}

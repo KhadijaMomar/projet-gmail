@@ -1,0 +1,232 @@
+@import url(./reset.css);
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Espacement entre le logo et la navigation */
+    align-items: center;
+    /* Alignement vertical */
+    padding: 20px;
+    background-color: white;
+    height: 2.5rem;
+    
+}
+
+header .logo img {
+    height: 2.5rem;
+    /* Ajuste la hauteur du logo */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+header .logo span{
+    font-size: 1.5rem;
+    color:  #5f6368;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #5f6368;
+    /* Couleur du texte de la navigation */
+}
+nav:nth-child(2) a{
+    margin-left: 1rem;
+}
+nav button {
+    background-color: var(--main-color);
+    /* Couleur du bouton */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    margin: 0;
+}
+.sec-1 {
+            background-image: url('../bg.webp');
+            background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+            height: 50vh; /* Hauteur de la section */
+            color: white; /* Couleur du texte */
+            text-align: center; /* Centrer le texte */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+.sec-1{
+    height: 62rem;
+    padding: 10rem 5rem;
+}
+.sec-1 .content {
+    text-align: left;
+    /* Alignement du texte à gauche */
+    margin-left: 1rem;
+    /* Ajoute un espace entre le texte et l'image */
+    margin-top: 12rem;
+}
+
+.sec-1 h1 {
+    font-size: 5rem;
+    /* Taille du titre */
+    width: 45%;
+}
+
+.sec-1 .content button {
+    background-color: #d14836;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.sec-1 .image img {
+    max-width: 500px;
+    /* Empêche l'image de dépasser la largeur */
+    height: auto;
+}
+.arrow-container {
+    /* Positionnement fixe par rapport à la fenêtre du navigateur */
+    margin-top: 50rem;
+    /* Distance par rapport au bas de l'écran */
+    right: 1.25rem;
+    /* Distance par rapport à la droite de l'écran */
+    z-index: 1000;
+    /* Assure que la flèche est au-dessus des autres éléments */
+    cursor: pointer;
+    /* Change le curseur en main au survol */
+   
+
+}
+
+.arrow {
+    font-size: 2em;
+    /* Taille de la flèche */
+    color: #000;
+    /* Couleur de la flèche */
+    /* Styles optionnels pour améliorer l'apparence */
+    background-color: #d14836;
+    /* Fond blanc semi-transparent */
+    padding: 10px;
+    border-radius: 50%;
+    /* Pour une flèche dans un cercle */
+    width: 5rem;
+    height: 5rem;
+}
+.arrow img{
+    height: 2rem;
+    justify-content: center;
+}
+.sec-2{
+    height: 62rem;
+}
+.sec-2 .content {
+    /* Styles précédents */
+    width: 50%;
+    /* Ajuste la largeur du contenu */
+    margin: 50px auto;
+    /* Centre le contenu horizontalement et ajoute une marge en haut */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+.sec-2 h1{
+    color:  #5f6368;
+    width: 50%;
+    text-align: center;
+}
+.sec-2 p{
+    color:  #5f6368;
+    width: 70%;
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #5f6368;
+    /* Légère ombre */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+label {
+    display: block;
+    /* Affiche les labels sur une nouvelle ligne */
+    margin-bottom: 5px;
+    color: #333;
+    /* Couleur du texte des labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 12px);
+    /* Ajuste la largeur pour tenir compte du padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Important pour que le padding n'affecte pas la largeur totale */
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    /*Couleur de fond des inputs*/
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background-color: #fff8dc;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button[type="submit"] {
+    background-color: #4285f4;
+    /* Bleu Google */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.sec-3 p{
+    color: #5f6368;
+}
+.sec-3 .content {
+    /* Styles précédents */
+    width: 50%;
+    /* Ajuste la largeur du contenu */
+    margin: 50px auto;
+    /* Centre le contenu horizontalement et ajoute une marge en haut */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
